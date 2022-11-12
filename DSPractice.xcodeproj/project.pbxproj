@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50ACEA02918FFF3002B9102 /* CircularQueueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50ACE9F2918FFF3002B9102 /* CircularQueueWithArray.swift */; };
+		F50ACEA2291910FB002B9102 /* CircularQueueLinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50ACEA1291910FB002B9102 /* CircularQueueLinkList.swift */; };
+		F531E174291F918C007CF463 /* SinglyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F531E173291F918B007CF463 /* SinglyLinkedList.swift */; };
 		F56FF1EC29162F530099E1C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF1EB29162F530099E1C7 /* AppDelegate.swift */; };
 		F56FF1EE29162F530099E1C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF1ED29162F530099E1C7 /* SceneDelegate.swift */; };
 		F56FF1F029162F530099E1C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF1EF29162F530099E1C7 /* ViewController.swift */; };
 		F56FF1F329162F530099E1C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56FF1F129162F530099E1C7 /* Main.storyboard */; };
 		F56FF1F529162F570099E1C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56FF1F429162F570099E1C7 /* Assets.xcassets */; };
 		F56FF1F829162F570099E1C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56FF1F629162F570099E1C7 /* LaunchScreen.storyboard */; };
+		F56FF20029162F750099E1C7 /* QueueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF1FF29162F750099E1C7 /* QueueWithArray.swift */; };
+		F56FF20329164B770099E1C7 /* QueueWithLinklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF20229164B770099E1C7 /* QueueWithLinklist.swift */; };
+		F56FF20529164B940099E1C7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF20429164B940099E1C7 /* Node.swift */; };
+		F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F596CFC5291B48D800308A72 /* DequeueWithArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F50ACE9F2918FFF3002B9102 /* CircularQueueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularQueueWithArray.swift; sourceTree = "<group>"; };
+		F50ACEA1291910FB002B9102 /* CircularQueueLinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularQueueLinkList.swift; sourceTree = "<group>"; };
+		F531E173291F918B007CF463 /* SinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedList.swift; sourceTree = "<group>"; };
 		F56FF1E829162F530099E1C7 /* DSPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56FF1EB29162F530099E1C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56FF1ED29162F530099E1C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,10 @@
 		F56FF1F429162F570099E1C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56FF1F729162F570099E1C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56FF1F929162F570099E1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56FF1FF29162F750099E1C7 /* QueueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueWithArray.swift; sourceTree = "<group>"; };
+		F56FF20229164B770099E1C7 /* QueueWithLinklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueWithLinklist.swift; sourceTree = "<group>"; };
+		F56FF20429164B940099E1C7 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		F596CFC5291B48D800308A72 /* DequeueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueWithArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F531E172291F9175007CF463 /* Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				F531E173291F918B007CF463 /* SinglyLinkedList.swift */,
+			);
+			path = "Linked List";
+			sourceTree = "<group>";
+		};
 		F56FF1DF29162F530099E1C7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +78,8 @@
 		F56FF1EA29162F530099E1C7 /* DSPractice */ = {
 			isa = PBXGroup;
 			children = (
+				F531E172291F9175007CF463 /* Linked List */,
+				F56FF20129162F790099E1C7 /* Queue */,
 				F56FF1EB29162F530099E1C7 /* AppDelegate.swift */,
 				F56FF1ED29162F530099E1C7 /* SceneDelegate.swift */,
 				F56FF1EF29162F530099E1C7 /* ViewController.swift */,
@@ -65,6 +89,19 @@
 				F56FF1F929162F570099E1C7 /* Info.plist */,
 			);
 			path = DSPractice;
+			sourceTree = "<group>";
+		};
+		F56FF20129162F790099E1C7 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				F56FF1FF29162F750099E1C7 /* QueueWithArray.swift */,
+				F56FF20429164B940099E1C7 /* Node.swift */,
+				F56FF20229164B770099E1C7 /* QueueWithLinklist.swift */,
+				F50ACE9F2918FFF3002B9102 /* CircularQueueWithArray.swift */,
+				F50ACEA1291910FB002B9102 /* CircularQueueLinkList.swift */,
+				F596CFC5291B48D800308A72 /* DequeueWithArray.swift */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F531E174291F918C007CF463 /* SinglyLinkedList.swift in Sources */,
+				F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */,
+				F56FF20329164B770099E1C7 /* QueueWithLinklist.swift in Sources */,
+				F56FF20529164B940099E1C7 /* Node.swift in Sources */,
+				F50ACEA2291910FB002B9102 /* CircularQueueLinkList.swift in Sources */,
 				F56FF1F029162F530099E1C7 /* ViewController.swift in Sources */,
 				F56FF1EC29162F530099E1C7 /* AppDelegate.swift in Sources */,
+				F50ACEA02918FFF3002B9102 /* CircularQueueWithArray.swift in Sources */,
 				F56FF1EE29162F530099E1C7 /* SceneDelegate.swift in Sources */,
+				F56FF20029162F750099E1C7 /* QueueWithArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
