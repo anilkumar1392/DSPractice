@@ -14,6 +14,7 @@ class Node: Equatable {
     
     var data: Int?
     var next: Node?
-    
+    var previous: Node?
+
     init() { }
 }

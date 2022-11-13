@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         // testDequeue()
         
         // Linked list
-        testSinglyLinedList()
+        // testSinglyLinedList()
+        testDoublyLinkedList()
     }
 
     func testQueueWithArray() {
@@ -130,6 +131,32 @@ extension ViewController {
         
         print("Revers list")
         
+        list.reverse()
+        list.display()
+
+    }
+    
+    func testDoublyLinkedList() {
+        let list = DoublyLinkedList()
+        list.addNode(data: 3)
+        list.addNode(data: 5)
+        list.addNode(data: 8)
+        list.addNode(data: 9)
+        
+
+        list.insertAtBeg(data: 2)
+        list.insertAtBeg(data: 1)
+        list.insertAtEnd(data: 10)
+        list.insertAtEnd(data: 11)
+        
+
+        list.insetAtPos(pos: 3, data: 22)
+
+        list.deleteAtBeg()
+        list.deleteAtEnd()
+        list.deleteAtPos(pos: 3)
+        
+        list.display()
         list.reverse()
         list.display()
 

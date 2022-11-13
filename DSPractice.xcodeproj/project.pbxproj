@@ -19,6 +19,7 @@
 		F56FF20029162F750099E1C7 /* QueueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF1FF29162F750099E1C7 /* QueueWithArray.swift */; };
 		F56FF20329164B770099E1C7 /* QueueWithLinklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF20229164B770099E1C7 /* QueueWithLinklist.swift */; };
 		F56FF20529164B940099E1C7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF20429164B940099E1C7 /* Node.swift */; };
+		F582DED329208D50008E54A4 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582DED229208D50008E54A4 /* DoublyLinkedList.swift */; };
 		F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F596CFC5291B48D800308A72 /* DequeueWithArray.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		F56FF1FF29162F750099E1C7 /* QueueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueWithArray.swift; sourceTree = "<group>"; };
 		F56FF20229164B770099E1C7 /* QueueWithLinklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueWithLinklist.swift; sourceTree = "<group>"; };
 		F56FF20429164B940099E1C7 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		F582DED229208D50008E54A4 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 		F596CFC5291B48D800308A72 /* DequeueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueWithArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F531E173291F918B007CF463 /* SinglyLinkedList.swift */,
+				F582DED229208D50008E54A4 /* DoublyLinkedList.swift */,
 			);
 			path = "Linked List";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				F531E174291F918C007CF463 /* SinglyLinkedList.swift in Sources */,
 				F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */,
 				F56FF20329164B770099E1C7 /* QueueWithLinklist.swift in Sources */,
+				F582DED329208D50008E54A4 /* DoublyLinkedList.swift in Sources */,
 				F56FF20529164B940099E1C7 /* Node.swift in Sources */,
 				F50ACEA2291910FB002B9102 /* CircularQueueLinkList.swift in Sources */,
 				F56FF1F029162F530099E1C7 /* ViewController.swift in Sources */,
