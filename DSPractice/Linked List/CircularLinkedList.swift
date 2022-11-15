@@ -182,4 +182,20 @@ class CircularLLWithTail {
             next = nil
         }
     }
+    
+    func reverse() {
+        var previous, current, next: Node?
+        current = tail?.next
+        next = current?.next
+
+        while current != tail {
+            previous = current
+            current = next
+            next = current?.next
+            current?.next = previous
+        }
+        
+        next?.next = tail
+        tail = next
+    }
 }

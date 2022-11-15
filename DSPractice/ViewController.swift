@@ -188,6 +188,11 @@ extension ViewController {
         list.deleteAtPos(pos: 2)
         
         list.display()
+        
+        list.reverse()
+        print("Reverse list----")
+        list.display()
+
     }
 }
 
