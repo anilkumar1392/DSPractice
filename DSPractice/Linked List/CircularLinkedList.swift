@@ -133,4 +133,53 @@ class CircularLLWithTail {
             temp?.next = newnode
         }
     }
+    
+    func deleteAtBeg() {
+        if tail == nil {
+            print("List is empty")
+        } else {
+            var temp = tail?.next
+            tail?.next = temp?.next
+            temp = nil
+        }
+    }
+    
+    func deleteAtEnd() {
+        if tail == nil {
+            print("List is empty")
+        } else if count() == 1 {
+            tail = nil
+        } else {
+            var current = tail?.next
+            var previous: Node?
+            
+            while current?.next != tail?.next {
+                previous = current
+                current = current?.next
+            }
+            
+            previous?.next = tail?.next
+            tail = previous
+
+        }
+    }
+    
+    func deleteAtPos(pos: Int) {
+        if tail == nil {
+            print("List is empty")
+        } else if count() == pos {
+            tail = nil
+        } else {
+            var current = tail?.next
+            var i = 1
+            
+            while i < pos-1 {
+                current = current?.next
+                i += 1
+            }
+            var next = current?.next
+            current?.next = next?.next
+            next = nil
+        }
+    }
 }

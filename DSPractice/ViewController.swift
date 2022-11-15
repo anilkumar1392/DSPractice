@@ -183,7 +183,10 @@ extension ViewController {
         // list.insertAtEnd(data: 5)
 
         list.insertAtPos(pos: 3, data: 3)
-
+        list.deleteAtBeg()
+        list.deleteAtEnd()
+        list.deleteAtPos(pos: 2)
+        
         list.display()
     }
 }
