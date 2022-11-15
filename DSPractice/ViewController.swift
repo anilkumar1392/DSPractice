@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         
         // Linked list
         // testSinglyLinedList()
-        testDoublyLinkedList()
+        // testDoublyLinkedList()
+        // testCircularLL()
+        
+        testCircularLLWithTail()
     }
 
     func testQueueWithArray() {
@@ -142,13 +145,11 @@ extension ViewController {
         list.addNode(data: 5)
         list.addNode(data: 8)
         list.addNode(data: 9)
-        
 
         list.insertAtBeg(data: 2)
         list.insertAtBeg(data: 1)
         list.insertAtEnd(data: 10)
         list.insertAtEnd(data: 11)
-        
 
         list.insetAtPos(pos: 3, data: 22)
 
@@ -159,7 +160,31 @@ extension ViewController {
         list.display()
         list.reverse()
         list.display()
+    }
+    
+    func testCircularLL() {
+        let list = CircularLLWithHeadTail()
+        list.addNode(data: 1)
+        list.addNode(data: 2)
+        list.addNode(data: 3)
 
+        list.display()
+    }
+    
+    func testCircularLLWithTail() {
+        let list = CircularLLWithTail()
+        list.addNode(data: 1)
+        list.addNode(data: 2)
+        list.addNode(data: 4)
+        list.addNode(data: 5)
+        list.addNode(data: 6)
+
+        // list.insertAtBeg(data: 0)
+        // list.insertAtEnd(data: 5)
+
+        list.insertAtPos(pos: 3, data: 3)
+
+        list.display()
     }
 }
 

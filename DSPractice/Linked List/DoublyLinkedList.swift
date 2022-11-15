@@ -33,7 +33,7 @@ class DoublyLinkedList {
         } else {
             var temp = head
             while temp != nil {
-                print("Item is: \(temp?.data)")
+                print("Item is: \(temp?.data ?? 0)")
                 temp = temp?.next
             }
         }
