@@ -238,13 +238,16 @@ extension ViewController {
     func addPolynomial() {
         let poly1 = Ploy()
         poly1.addNode(coeff: 5, power: 4)
-        poly1.addNode(coeff: 7, power: 3)
-        poly1.addNode(coeff: 2, power: 7)
+        poly1.addNode(coeff: 6, power: 2)
+        poly1.addNode(coeff: 10, power: 1)
+        poly1.addNode(coeff: 6, power: 0)
         
         let poly2 = Ploy()
-        poly2.addNode(coeff: 6, power: 4)
-        poly2.addNode(coeff: 4, power: 3)
-        poly2.addNode(coeff: 3, power: 7)
+        poly2.addNode(coeff: 7, power: 3)
+        poly2.addNode(coeff: 3, power: 2)
+        poly2.addNode(coeff: 2, power: 1)
+        poly2.addNode(coeff: 7, power: 0)
+
         
         let poly3 = AddPloynomial()
         let result = poly3.add(poly1: poly1.head, poly2: poly2.head)

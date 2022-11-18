@@ -55,8 +55,8 @@ class AddPloynomial {
                 coeff = poly1?.coeff ?? 0
                 poly1 = poly1?.next
             } else if poly1!.power! < poly2!.power! {
-                power = poly1?.power ?? 0
-                coeff = poly1?.coeff ?? 0
+                power = poly2?.power ?? 0
+                coeff = poly2?.coeff ?? 0
                 poly2 = poly2?.next
             } else {
                 power = poly2!.power!
