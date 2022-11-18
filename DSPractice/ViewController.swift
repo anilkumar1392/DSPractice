@@ -24,7 +24,13 @@ class ViewController: UIViewController {
         // testDoublyLinkedList()
         // testCircularLL()
         
-        testCircularLLWithTail()
+        // testCircularLLWithTail()
+        // testDoublyCircularLL()
+        
+        // testSearching()
+        // testBinarySearch()
+        
+        addPolynomial()
     }
 
     func testQueueWithArray() {
@@ -194,5 +200,54 @@ extension ViewController {
         list.display()
 
     }
+    
+    func testDoublyCircularLL() {
+        let node = DoublyCircularLL()
+        node.addNode(data: 1)
+        node.addNode(data: 3)
+        node.addNode(data: 5)
+
+        node.addAtBeg(data: 10)
+        node.addAtEnd(data: 20)
+        node.addAtPos(data: 4, pos: 4)
+        
+        node.deleteAtBeg()
+        node.deleteAtEnd()
+        node.deleteAtPos(pos: 3)
+
+        node.display()
+    }
 }
 
+// MARK: - Searching
+
+extension ViewController {
+    func testSearching() {
+        let arr = [1,12,3,4,5,6,7,8,9]
+        let search = LinearSearch()
+        print(search.searchItem(arr: arr, item: 12) ?? 0)
+    }
+    
+    func testBinarySearch() {
+        // let arr = [10,20,30,40,45,50,55,60,65,70]
+        let arr = [5,9,17,23,25,45,59,63,71,89]
+        let index = BinarySearch.search(arr: arr, item: 63, range: 0..<arr.count)
+        print("----------\(index)")
+    }
+    
+    func addPolynomial() {
+        let poly1 = Ploy()
+        poly1.addNode(coeff: 5, power: 4)
+        poly1.addNode(coeff: 7, power: 3)
+        poly1.addNode(coeff: 2, power: 7)
+        
+        let poly2 = Ploy()
+        poly2.addNode(coeff: 6, power: 4)
+        poly2.addNode(coeff: 4, power: 3)
+        poly2.addNode(coeff: 3, power: 7)
+        
+        let poly3 = AddPloynomial()
+        let result = poly3.add(poly1: poly1.head, poly2: poly2.head)
+        result?.display()
+    }
+}

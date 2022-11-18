@@ -21,6 +21,9 @@
 		F56FF20529164B940099E1C7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF20429164B940099E1C7 /* Node.swift */; };
 		F582DED329208D50008E54A4 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582DED229208D50008E54A4 /* DoublyLinkedList.swift */; };
 		F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F596CFC5291B48D800308A72 /* DequeueWithArray.swift */; };
+		F5CE27EF2925D95C00453507 /* DoublyCircularLL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE27EE2925D95C00453507 /* DoublyCircularLL.swift */; };
+		F5DA65B22926140800014CE7 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DA65B12926140800014CE7 /* LinearSearch.swift */; };
+		F5EEDA0C29272108001F1129 /* AdditionOfPolynomial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEDA0B29272108001F1129 /* AdditionOfPolynomial.swift */; };
 		F5F3AAC62923264F00B28AFD /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F3AAC52923264F00B28AFD /* CircularLinkedList.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		F56FF20429164B940099E1C7 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		F582DED229208D50008E54A4 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 		F596CFC5291B48D800308A72 /* DequeueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueWithArray.swift; sourceTree = "<group>"; };
+		F5CE27EE2925D95C00453507 /* DoublyCircularLL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyCircularLL.swift; sourceTree = "<group>"; };
+		F5DA65B12926140800014CE7 /* LinearSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearch.swift; sourceTree = "<group>"; };
+		F5EEDA0B29272108001F1129 /* AdditionOfPolynomial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionOfPolynomial.swift; sourceTree = "<group>"; };
 		F5F3AAC52923264F00B28AFD /* CircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +67,8 @@
 				F531E173291F918B007CF463 /* SinglyLinkedList.swift */,
 				F582DED229208D50008E54A4 /* DoublyLinkedList.swift */,
 				F5F3AAC52923264F00B28AFD /* CircularLinkedList.swift */,
+				F5CE27EE2925D95C00453507 /* DoublyCircularLL.swift */,
+				F5EEDA0B29272108001F1129 /* AdditionOfPolynomial.swift */,
 			);
 			path = "Linked List";
 			sourceTree = "<group>";
@@ -84,6 +92,7 @@
 		F56FF1EA29162F530099E1C7 /* DSPractice */ = {
 			isa = PBXGroup;
 			children = (
+				F5DA65B0292613FC00014CE7 /* Searching */,
 				F531E172291F9175007CF463 /* Linked List */,
 				F56FF20129162F790099E1C7 /* Queue */,
 				F56FF1EB29162F530099E1C7 /* AppDelegate.swift */,
@@ -108,6 +117,14 @@
 				F596CFC5291B48D800308A72 /* DequeueWithArray.swift */,
 			);
 			path = Queue;
+			sourceTree = "<group>";
+		};
+		F5DA65B0292613FC00014CE7 /* Searching */ = {
+			isa = PBXGroup;
+			children = (
+				F5DA65B12926140800014CE7 /* LinearSearch.swift */,
+			);
+			path = Searching;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,12 +202,15 @@
 				F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */,
 				F56FF20329164B770099E1C7 /* QueueWithLinklist.swift in Sources */,
 				F582DED329208D50008E54A4 /* DoublyLinkedList.swift in Sources */,
+				F5CE27EF2925D95C00453507 /* DoublyCircularLL.swift in Sources */,
 				F56FF20529164B940099E1C7 /* Node.swift in Sources */,
 				F50ACEA2291910FB002B9102 /* CircularQueueLinkList.swift in Sources */,
 				F56FF1F029162F530099E1C7 /* ViewController.swift in Sources */,
 				F5F3AAC62923264F00B28AFD /* CircularLinkedList.swift in Sources */,
 				F56FF1EC29162F530099E1C7 /* AppDelegate.swift in Sources */,
+				F5DA65B22926140800014CE7 /* LinearSearch.swift in Sources */,
 				F50ACEA02918FFF3002B9102 /* CircularQueueWithArray.swift in Sources */,
+				F5EEDA0C29272108001F1129 /* AdditionOfPolynomial.swift in Sources */,
 				F56FF1EE29162F530099E1C7 /* SceneDelegate.swift in Sources */,
 				F56FF20029162F750099E1C7 /* QueueWithArray.swift in Sources */,
 			);
