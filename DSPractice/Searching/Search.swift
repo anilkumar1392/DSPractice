@@ -41,3 +41,31 @@ class BinarySearch {
         }
     }
 }
+
+
+class Binary {
+    static func search(arr: [Int], item: Int) -> Int? {
+        var loc: Int? = nil
+        var beg = 0
+        var end = arr.count-1
+        var flag = false
+        var mid: Int
+        
+        repeat {
+            mid = (beg + end)/2
+            if arr[mid] == item {
+                flag = true
+                loc = mid
+            } else if arr[mid] < item {
+                beg = mid+1
+            } else {
+                end = mid-1
+            }
+        } while beg < end && arr[mid] != item
+        
+        if !flag {
+            print("Search unsuccessfull.")
+        }
+        return loc
+    }
+}

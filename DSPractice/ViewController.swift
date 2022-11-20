@@ -30,7 +30,10 @@ class ViewController: UIViewController {
         // testSearching()
         // testBinarySearch()
         
-        addPolynomial()
+        // addPolynomial()
+        // testBinarySearch()
+        
+        testSorting()
     }
 
     func testQueueWithArray() {
@@ -231,7 +234,9 @@ extension ViewController {
     func testBinarySearch() {
         // let arr = [10,20,30,40,45,50,55,60,65,70]
         let arr = [5,9,17,23,25,45,59,63,71,89]
-        let index = BinarySearch.search(arr: arr, item: 63, range: 0..<arr.count)
+        // let index = BinarySearch.search(arr: arr, item: 63, range: 0..<arr.count)
+        
+        let index = Binary.search(arr: arr, item: 63)
         print("----------\(index)")
     }
     
@@ -252,5 +257,22 @@ extension ViewController {
         let poly3 = AddPloynomial()
         let result = poly3.add(poly1: poly1.head, poly2: poly2.head)
         result?.display()
+    }
+}
+
+extension ViewController {
+    func testSorting() {
+        let arr: [Int] = [12, 2, 56, 3, 7, 8, 6]
+        
+        /*
+        let sortedList: [Int] = Bubble.sort(arr: arr)
+        print("Sorted list \(sortedList)") */
+        
+        
+//        let sortedList: [Int] = Selection.sort(arr: arr)
+//        print("Sorted list \(sortedList)")
+        
+        let sortedList: [Int] = Insertion.sort(arr: arr)
+        print("Sorted list \(sortedList)")
     }
 }
