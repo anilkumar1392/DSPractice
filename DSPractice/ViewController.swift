@@ -262,7 +262,7 @@ extension ViewController {
 
 extension ViewController {
     func testSorting() {
-        let arr: [Int] = [12, 2, 56, 3, 7, 8, 6]
+        var arr: [Int] = [12, 2, 56, 3, 7, 8, 6]
         
         /*
         let sortedList: [Int] = Bubble.sort(arr: arr)
@@ -272,7 +272,9 @@ extension ViewController {
 //        let sortedList: [Int] = Selection.sort(arr: arr)
 //        print("Sorted list \(sortedList)")
         
-        let sortedList: [Int] = Insertion.sort(arr: arr)
-        print("Sorted list \(sortedList)")
+//        let sortedList: [Int] = Insertion.sort(arr: arr)
+//        print("Sorted list \(sortedList)")
+        
+        Quick.sort(arr: &arr, lowerbound: 0, upperbound: arr.count-1)
     }
 }
