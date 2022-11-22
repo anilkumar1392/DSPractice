@@ -275,6 +275,11 @@ extension ViewController {
 //        let sortedList: [Int] = Insertion.sort(arr: arr)
 //        print("Sorted list \(sortedList)")
         
-        Quick.sort(arr: &arr, lowerbound: 0, upperbound: arr.count-1)
+        // Quick.sort(arr: &arr, lowerbound: 0, upperbound: arr.count-1)
+        
+//        let sortedList: [Int] = Merge.sort(arr: arr)
+//        print("Sorted list \(sortedList)")
+        
+        Heap.sort(arr: &arr, n: arr.count)
     }
 }
