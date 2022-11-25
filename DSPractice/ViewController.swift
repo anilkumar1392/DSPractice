@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         // addPolynomial()
         // testBinarySearch()
         
-        testSorting()
+        // testSorting()
+        testCountSort()
     }
 
     func testQueueWithArray() {
@@ -282,4 +283,12 @@ extension ViewController {
         
         Heap.sort(arr: &arr, n: arr.count)
     }
+}
+
+extension ViewController {
+    func testCountSort() {
+        let arr: [Int] = [2,3,5,1,4,9,7,8,5,2,4,7,5]
+        Couting.sort(arr: arr, n: arr.count)
+    }
+ 
 }

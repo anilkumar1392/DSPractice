@@ -9,6 +9,10 @@ import Foundation
 
 /*
  var arr: [Int] = [12, 2, 56, 3, 7, 8, 6]
+ 
+ Time taken for creation is O(n)
+ time taken for deletion is O(nlogn)
+ Totol Time = O(n) + O(nlogn) = O(nLogn)
 
  */
 class Heap {
