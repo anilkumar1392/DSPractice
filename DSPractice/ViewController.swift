@@ -36,7 +36,8 @@ class ViewController: UIViewController {
         // testSorting()
         // testCountSort()
         
-        testRedixSort()
+        // testRedixSort()
+        testShellSort()
     }
 
     func testQueueWithArray() {
@@ -287,6 +288,8 @@ extension ViewController {
     }
 }
 
+// MARK: - Non comparison based sort
+
 extension ViewController {
     func testCountSort() {
         let arr: [Int] = [2,3,5,1,4,9,7,8,5,2,4,7,5]
@@ -296,5 +299,12 @@ extension ViewController {
     func testRedixSort() {
         let arr: [Int] = [432, 8, 530, 90, 88, 231, 11, 45, 677, 199]
         RedixSort().sort(arr: arr)
+    }
+}
+
+extension ViewController {
+    func testShellSort() {
+        var arr: [Int] = [432, 8, 530, 90, 88, 231, 11, 45, 677, 199]
+        Shell().sort(arr: &arr)
     }
 }
