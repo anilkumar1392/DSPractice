@@ -34,7 +34,9 @@ class ViewController: UIViewController {
         // testBinarySearch()
         
         // testSorting()
-        testCountSort()
+        // testCountSort()
+        
+        testRedixSort()
     }
 
     func testQueueWithArray() {
@@ -291,4 +293,8 @@ extension ViewController {
         Couting.sort(arr: arr, n: arr.count)
     }
  
+    func testRedixSort() {
+        let arr: [Int] = [432, 8, 530, 90, 88, 231, 11, 45, 677, 199]
+        RedixSort().sort(arr: arr)
+    }
 }
