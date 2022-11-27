@@ -22,6 +22,7 @@
 		F56FF20329164B770099E1C7 /* QueueWithLinklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF20229164B770099E1C7 /* QueueWithLinklist.swift */; };
 		F56FF20529164B940099E1C7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FF20429164B940099E1C7 /* Node.swift */; };
 		F582DED329208D50008E54A4 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582DED229208D50008E54A4 /* DoublyLinkedList.swift */; };
+		F58FA53629338AE80077792C /* HeapSortRevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58FA53529338AE80077792C /* HeapSortRevision.swift */; };
 		F5926ED72931B82E00353A91 /* RedixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5926ED62931B82E00353A91 /* RedixSort.swift */; };
 		F5926ED92931C02200353A91 /* Shell Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5926ED82931C02200353A91 /* Shell Sort.swift */; };
 		F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F596CFC5291B48D800308A72 /* DequeueWithArray.swift */; };
@@ -56,6 +57,7 @@
 		F56FF20229164B770099E1C7 /* QueueWithLinklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueWithLinklist.swift; sourceTree = "<group>"; };
 		F56FF20429164B940099E1C7 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		F582DED229208D50008E54A4 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		F58FA53529338AE80077792C /* HeapSortRevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSortRevision.swift; sourceTree = "<group>"; };
 		F5926ED62931B82E00353A91 /* RedixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedixSort.swift; sourceTree = "<group>"; };
 		F5926ED82931C02200353A91 /* Shell Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell Sort.swift"; sourceTree = "<group>"; };
 		F596CFC5291B48D800308A72 /* DequeueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueWithArray.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				F56D46EE29330F2400283B1C /* QuickSortingRevision.swift */,
 				F56D46F02933160400283B1C /* MergeSortRevision.swift */,
+				F58FA53529338AE80077792C /* HeapSortRevision.swift */,
 			);
 			path = "Sorting Practice";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				F5A9E88B2930638F00EC006C /* CountingSort.swift in Sources */,
 				F5BFAA18292A2A08007DF205 /* BubbleSort.swift in Sources */,
 				F56D46F12933160400283B1C /* MergeSortRevision.swift in Sources */,
+				F58FA53629338AE80077792C /* HeapSortRevision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
