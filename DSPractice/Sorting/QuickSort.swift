@@ -49,7 +49,7 @@ class Quick {
         var end = upperbound
         
         while start < end {
-            while arr[start] <= pivot {
+            while start <= upperbound && arr[start] <= pivot {
                 start += 1
             }
             

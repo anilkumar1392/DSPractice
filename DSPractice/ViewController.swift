@@ -37,7 +37,9 @@ class ViewController: UIViewController {
         // testCountSort()
         
         // testRedixSort()
-        testShellSort()
+        // testShellSort()
+        
+        sortingRerivision()
     }
 
     func testQueueWithArray() {
@@ -306,5 +308,16 @@ extension ViewController {
     func testShellSort() {
         var arr: [Int] = [432, 8, 530, 90, 88, 231, 11, 45, 677, 199]
         Shell().sort(arr: &arr)
+    }
+}
+
+extension ViewController {
+    func sortingRerivision() {
+        var arr: [Int] = [23, 12, 45, 89, 2, 7, 5]
+        // bubble(arr: arr)
+        // selection(arr: arr)
+        // insertion(arr: arr)
+        let sort = QuickPractice()
+        sort.quick(arr: &arr, lb: 0, ub: arr.count-1)
     }
 }
