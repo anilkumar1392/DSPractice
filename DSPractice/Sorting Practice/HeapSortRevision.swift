@@ -11,6 +11,8 @@ class HeapSortRevision {
     func heapSort(arr: inout [Int]) {
         // Create max heap
         // Non leaf node
+        
+        // Time taken to create a max heap is O(n)
         for i in stride(from: (arr.count/2)-1, through: 0, by: -1) {
             heapify(arr: &arr, n: arr.count, i: i)
         }
@@ -18,7 +20,8 @@ class HeapSortRevision {
         print("Max heap arr: \(arr)")
         
         // Deletion
-        
+        // Time taken to delete item from max heap O(logn)
+        // time taken to delete n items n * logn = O(nlogn)
         for i in stride(from: arr.count-1, through: 0, by: -1) {
             arr.swapAt(i, 0)
             heapify(arr: &arr, n: i, i: 0)

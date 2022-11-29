@@ -40,7 +40,9 @@ class ViewController: UIViewController {
         // testShellSort()
         
         // sortingRerivision()
-        testHeap()
+        // testHeap()
+        
+        testTreeImplementation()
     }
 
     func testQueueWithArray() {
@@ -326,5 +328,17 @@ extension ViewController {
         var arr: [Int] = [23, 12, 45, 89, 2, 7, 5]
         let sort = HeapSortRevision()
         sort.heapSort(arr: &arr)
+    }
+}
+
+// Tree implementation
+
+extension ViewController {
+    func testTreeImplementation() {
+        let tree = BinaryTree()
+        tree.createTree()
+        
+        // BinaryTree.preOrderTraversal(root: tree.head)
+        BinaryTree.postOrderTraversal(root: tree.head)
     }
 }
