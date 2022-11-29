@@ -339,6 +339,8 @@ extension ViewController {
         tree.createTree()
         
         // BinaryTree.preOrderTraversal(root: tree.head)
-        BinaryTree.postOrderTraversal(root: tree.head)
+        // BinaryTree.postOrderTraversal(root: tree.head)
+        // BinaryTree.inOrderTraversal(root: tree.head)
+        BinaryTree.inOrderIterativeTraversal(root: tree.head)
     }
 }
