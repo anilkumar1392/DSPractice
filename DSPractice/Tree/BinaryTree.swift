@@ -141,4 +141,49 @@ extension BinaryTree {
         }
     }
 
+    static func preOrderIterativeTraversal(root: TNode?) {
+        var stack: [TNode?] = []
+        var node: TNode? = root
+        
+        stack.append(root)
+        while !stack.isEmpty {
+            node = stack.removeLast()
+            print("Item is \(node!.data!)")
+
+            if node?.right != nil {
+                stack.append(node?.right)
+            }
+            
+            if node?.left != nil {
+                stack.append(node?.left)
+            }
+        }
+    }
+    
+    static func postOrderIterativeTraversal(root: TNode?) {
+        var stack: [TNode?] = []
+        var stack2: [TNode?] = []
+
+        var node: TNode? = root
+        
+        stack.append(root)
+        while !stack.isEmpty {
+            node = stack.removeLast()
+            stack2.append(node)
+
+            if node?.left != nil {
+                stack.append(node?.left)
+            }
+            
+            if node?.right != nil {
+                stack.append(node?.right)
+            }
+        }
+        
+        while !stack2.isEmpty {
+            node = stack2.removeLast()
+            print("Item is \(node!.data!)")
+        }
+        
+    }
 }

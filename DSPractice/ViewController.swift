@@ -341,6 +341,8 @@ extension ViewController {
         // BinaryTree.preOrderTraversal(root: tree.head)
         // BinaryTree.postOrderTraversal(root: tree.head)
         // BinaryTree.inOrderTraversal(root: tree.head)
-        BinaryTree.inOrderIterativeTraversal(root: tree.head)
+        // BinaryTree.inOrderIterativeTraversal(root: tree.head)
+        // BinaryTree.preOrderIterativeTraversal(root: tree.head)
+        BinaryTree.postOrderIterativeTraversal(root: tree.head)
     }
 }
