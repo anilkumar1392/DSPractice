@@ -42,7 +42,8 @@ class ViewController: UIViewController {
         // sortingRerivision()
         // testHeap()
         
-        testTreeImplementation()
+        // testTreeImplementation()
+        testBinarySearchTree()
     }
 
     func testQueueWithArray() {
@@ -344,5 +345,25 @@ extension ViewController {
         // BinaryTree.inOrderIterativeTraversal(root: tree.head)
         // BinaryTree.preOrderIterativeTraversal(root: tree.head)
         BinaryTree.postOrderIterativeTraversal(root: tree.head)
+    }
+    
+    func testBinarySearchTree() {
+        let tree = BinarySearchTree<Int>()
+        tree.insert(data: 20)
+        tree.insert(data: 16)
+        tree.insert(data: 5)
+        tree.insert(data: 18)
+        tree.insert(data: 17)
+        tree.insert(data: 19)
+        tree.insert(data: 60)
+        tree.insert(data: 85)
+        tree.insert(data: 70)
+
+        // BinarySearchTree<Int>.postOrderTraversal(root: tree.head)
+        // BinarySearchTree<Int>.preOrderTraversal(root: tree.head)
+        BinarySearchTree<Int>.inOrderTraversal(root: tree.head)
+
+
+
     }
 }

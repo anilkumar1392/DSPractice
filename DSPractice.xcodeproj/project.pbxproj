@@ -32,6 +32,8 @@
 		F5BFAA1C292A30D8007DF205 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFAA1B292A30D8007DF205 /* InsertionSort.swift */; };
 		F5BFAA1F292A5B22007DF205 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFAA1E292A5B22007DF205 /* QuickSort.swift */; };
 		F5CE27EF2925D95C00453507 /* DoublyCircularLL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE27EE2925D95C00453507 /* DoublyCircularLL.swift */; };
+		F5D17C862938AFD600336276 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D17C852938AFD600336276 /* TreeNode.swift */; };
+		F5D17C882938B06400336276 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D17C872938B06400336276 /* BinarySearchTree.swift */; };
 		F5D301C8292C76B7009A455A /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D301C7292C76B7009A455A /* HeapSort.swift */; };
 		F5DA65B22926140800014CE7 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DA65B12926140800014CE7 /* Search.swift */; };
 		F5EEDA0C29272108001F1129 /* AdditionOfPolynomial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEDA0B29272108001F1129 /* AdditionOfPolynomial.swift */; };
@@ -69,6 +71,8 @@
 		F5BFAA1B292A30D8007DF205 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		F5BFAA1E292A5B22007DF205 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		F5CE27EE2925D95C00453507 /* DoublyCircularLL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyCircularLL.swift; sourceTree = "<group>"; };
+		F5D17C852938AFD600336276 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		F5D17C872938B06400336276 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		F5D301C7292C76B7009A455A /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		F5DA65B12926140800014CE7 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		F5EEDA0B29272108001F1129 /* AdditionOfPolynomial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionOfPolynomial.swift; sourceTree = "<group>"; };
@@ -176,6 +180,15 @@
 			path = Sorting;
 			sourceTree = "<group>";
 		};
+		F5D17C842938AFC500336276 /* Binary Search Tree */ = {
+			isa = PBXGroup;
+			children = (
+				F5D17C852938AFD600336276 /* TreeNode.swift */,
+				F5D17C872938B06400336276 /* BinarySearchTree.swift */,
+			);
+			path = "Binary Search Tree";
+			sourceTree = "<group>";
+		};
 		F5DA65B0292613FC00014CE7 /* Searching */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +202,7 @@
 			children = (
 				F5FA0F2529360F860005D18D /* B-Tree-node.swift */,
 				F5FA0F2329360F510005D18D /* BinaryTree.swift */,
+				F5D17C842938AFC500336276 /* Binary Search Tree */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -264,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D17C882938B06400336276 /* BinarySearchTree.swift in Sources */,
 				F5BFAA1A292A2D23007DF205 /* SelectionSort.swift in Sources */,
 				F531E174291F918C007CF463 /* SinglyLinkedList.swift in Sources */,
 				F596CFC6291B48D800308A72 /* DequeueWithArray.swift in Sources */,
@@ -287,6 +302,7 @@
 				F5DA65B22926140800014CE7 /* Search.swift in Sources */,
 				F50ACEA02918FFF3002B9102 /* CircularQueueWithArray.swift in Sources */,
 				F5EEDA0C29272108001F1129 /* AdditionOfPolynomial.swift in Sources */,
+				F5D17C862938AFD600336276 /* TreeNode.swift in Sources */,
 				F56FF1EE29162F530099E1C7 /* SceneDelegate.swift in Sources */,
 				F56FF20029162F750099E1C7 /* QueueWithArray.swift in Sources */,
 				F5A9E88B2930638F00EC006C /* CountingSort.swift in Sources */,
