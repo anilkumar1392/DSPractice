@@ -74,3 +74,26 @@ extension BinarySearchTree {
         inOrderTraversal(root: root?.right)
     }
 }
+
+extension BinarySearchTree {
+    func search(data: T) {
+        self.search(data: data, node: self.head)
+    }
+    
+    private func search(data: T, node: TreeNode<T>?) {
+        guard let root = node else { return }
+        if root.data < data {
+            // Check in right node
+            if let rightNode = root.right {
+                self.search(data: data, node: rightNode)
+            }
+        } else if root.data > data {
+            // Check in left node
+            if let leftNode = root.left {
+                self.search(data: data, node: leftNode)
+            }
+        } else {
+            print("Node found \(root.data)")
+        }
+    }
+}
