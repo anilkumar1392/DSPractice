@@ -363,6 +363,10 @@ extension ViewController {
         // BinarySearchTree<Int>.preOrderTraversal(root: tree.head)
         // BinarySearchTree<Int>.inOrderTraversal(root: tree.head)
         
-        tree.search(data: 60)
+        // tree.search(data: 60)
+        
+        tree.delete(data: 60, root: tree.head)
+        BinarySearchTree<Int>.inOrderTraversal(root: tree.head)
     }
+    
 }

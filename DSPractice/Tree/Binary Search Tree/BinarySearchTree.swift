@@ -7,9 +7,11 @@
 
 import Foundation
 
+// MARK: - Insert
+
 class BinarySearchTree<T: Comparable & CustomStringConvertible> {
     var head: TreeNode<T>?
-    
+
     func insert(data: T) {
         let newNode = TreeNode(data: data)
         
@@ -39,6 +41,8 @@ class BinarySearchTree<T: Comparable & CustomStringConvertible> {
     }
 }
 
+
+// MARK: Traverse
 
 extension BinarySearchTree {
     // Pre order is root, left, right,
@@ -75,13 +79,16 @@ extension BinarySearchTree {
     }
 }
 
+// MARK: - Search
+
 extension BinarySearchTree {
     func search(data: T) {
         self.search(data: data, node: self.head)
     }
     
-    private func search(data: T, node: TreeNode<T>?) {
-        guard let root = node else { return }
+    @discardableResult
+    private func search(data: T, node: TreeNode<T>?) -> TreeNode<T>? {
+        guard let root = node else { return nil }
         if root.data < data {
             // Check in right node
             if let rightNode = root.right {
@@ -94,6 +101,66 @@ extension BinarySearchTree {
             }
         } else {
             print("Node found \(root.data)")
+            return root
         }
+        return nil
+    }
+}
+
+// MARK:- Delete
+extension BinarySearchTree {
+    func delete(data: T, root: TreeNode<T>?) -> TreeNode<T>? {
+        guard var root = root else {
+            print("Tree is nil")
+            return nil
+        }
+        
+        if root.data == data {
+            return helper(root: root)
+        }
+        
+        let dummyroot = root
+        while root != nil {
+            if root.data > data {
+                // Move to left tree
+                if root.left != nil && root.left?.data == data {
+                    root.left = helper(root: root.left)
+                    break
+                } else {
+                    root = root.left!
+                }
+            } else {
+                if root.right != nil && root.right?.data == data {
+                    root.right = helper(root: root.right)
+                    break
+                } else {
+                    root = root.right!
+                }
+            }
+        }
+        
+        return dummyroot
+    }
+    
+    private func helper(root: TreeNode<T>?) -> TreeNode<T>? {
+        if root?.left == nil {
+            return root?.right
+        }
+        
+        if root?.right == nil {
+            return root?.left
+        }
+        
+        let rightChild = root?.right
+        let lastChild = getRightChild(root: root?.left)
+        lastChild?.right = rightChild
+        return root?.left
+    }
+    
+    private func getRightChild(root: TreeNode<T>?) -> TreeNode<T>? {
+        if root?.right == nil {
+            return root
+        }
+        return getRightChild(root: root?.right)
     }
 }
